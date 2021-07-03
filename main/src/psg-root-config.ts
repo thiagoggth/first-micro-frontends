@@ -22,6 +22,12 @@ registerApplication({
 });
 
 registerApplication({
+  name: "@psg/react-lazy",
+  app: () => System.import("@psg/react-lazy"),
+  activeWhen: ["/react-lazy"],
+});
+
+registerApplication({
   name: "@psg/react-route",
   app: () => System.import("@psg/react-route"),
   activeWhen: (location) => location.pathname === "/react-route",

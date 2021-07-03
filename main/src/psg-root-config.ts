@@ -33,6 +33,12 @@ registerApplication({
   activeWhen: (location) => location.pathname === "/react-route",
 });
 
+registerApplication({
+  name: "@psg/react-header",
+  app: () => System.import("@psg/react-header"),
+  activeWhen: ["/"],
+});
+
 start({
   urlRerouteOnly: true,
 });

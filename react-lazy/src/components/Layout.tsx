@@ -1,9 +1,9 @@
 import React, { Children } from "react";
 import { Link } from "react-router-dom";
 
-const Layout: React.FC = ({ children }) => (
+const Layout: React.FC<{ name: string }> = ({ children, name }) => (
   <main>
-    <h1>@psg/react-multiples</h1>
+    <h1>{name}</h1>
     <nav>
       <ul>
         <li>
